@@ -18,7 +18,9 @@ testClient2 <-> testServer2
 
 
 ---
-ОС для настройки: CentOS Linux release 7.9.2009 (Core) (особо сложностей из-за отличий с методичек не увидел)
+ОС для настройки: 
+- CentOS Linux release 7.9.2009 (Core) (особо сложностей из-за отличий с методичек не увидел)
+- Ubuntu 22.04
 
 Vagrant версии 2.4.1
 
@@ -44,7 +46,7 @@ VirtualBox версии 7.0.18
 2. Менял на https://mirror.yandex.ru/centos/centos/7/os/x86_64/
 3. Обновляем пакеты, устанавливаем ПО: yum install -y nano traceroute tcpdump net-tools
 
-**На всех хостах с ОС Centos:**
+**На всех хостах с ОС Ubuntu:**
 1. Обновляем пакеты
 2. Устанавливаем ПО apt install -y traceroute tcpdump net-tools
 
@@ -253,8 +255,13 @@ network:
 ---
 После настройки второго VLAN`а ping должен работать между хостами testClient1, testServer1 и между хостами testClient2, testServer2. Проверим
 
+между хостами testClient2, testServer2
 
 ![images2](./images/vlan_12.png)
+
+
+между хостами testClient1, testServer1
+
 ![images2](./images/vlan_13.png)
 
 
